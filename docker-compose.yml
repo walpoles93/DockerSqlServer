@@ -6,6 +6,8 @@ services:
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=1Secure*Password1
+    ports:
+      - 1433:1433
 
   dockersqlserver:
     image: ${DOCKER_REGISTRY-}dockersqlserver
